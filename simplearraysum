@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int simplearraysum(int arr[100],int n)
+{ 
+    int i;
+int sum=0;
+    for(i=0;i<n;i++)
+    {
+        sum =sum+arr[i];
+    }
+    return sum;
+}
+
+int main()
+{ 
+    int arr[100],a,k;
+    scanf("%d",&a);
+    for(int i=0;i<a;i++)
+    {
+      scanf("%d",&arr[i]); 
+    }
+    k=simplearraysum(arr,a);
+    printf("%d",k);
+    return 0;
+}
